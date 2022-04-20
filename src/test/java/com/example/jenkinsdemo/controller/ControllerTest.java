@@ -20,7 +20,7 @@ class ControllerTest {
 
     @Test
     void getData() throws Exception {
-        mockMvc.perform(get("/test"))
+        mockMvc.perform(get("/"))
                 .andDo(print())
                 .andExpect(status().isOk())
                 .andExpect(content().string("test"));
